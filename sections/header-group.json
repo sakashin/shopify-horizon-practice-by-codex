@@ -1,0 +1,118 @@
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "header_announcements_9jGBFp": {
+      "type": "header-announcements",
+      "blocks": {
+        "announcement_BxgCk9": {
+          "type": "_announcement",
+          "settings": {
+            "text": "10,000円以上のご注文で送料無料",
+            "link": "shopify://policies/shipping-policy",
+            "font": "var(--font-subheading--family)",
+            "font_size": "0.75rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "announcement_BxgCk9"
+      ],
+      "disabled": false,
+      "name": "t:names.announcement_bar",
+      "settings": {
+        "speed": 5,
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "divider_width": 1,
+        "padding-block-start": 15,
+        "padding-block-end": 15
+      }
+    },
+    "header_section": {
+      "type": "header",
+      "blocks": {
+        "header-logo": {
+          "type": "_header-logo",
+          "static": true,
+          "settings": {
+            "hide_logo_on_home_page": false,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
+        },
+        "header-menu": {
+          "type": "_header-menu",
+          "static": true,
+          "settings": {
+            "menu": "main-menu",
+            "type_font_primary_size": "0.875rem",
+            "menu_font_style": "inverse",
+            "type_font_primary_link": "body",
+            "type_case_primary_link": "none",
+            "menu_style": "text",
+            "featured_products_aspect_ratio": "4 / 5",
+            "featured_collections_aspect_ratio": "16 / 9",
+            "image_border_radius": 0,
+            "navigation_bar": false,
+            "drawer_accordion": true,
+            "drawer_accordion_expand_first": false,
+            "drawer_dividers": false
+          },
+          "blocks": {}
+        }
+      },
+      "settings": {
+        "logo_position": "left",
+        "menu_position": "left",
+        "menu_row": "top",
+        "customer_account_menu": "customer-account-main-menu",
+        "show_search": true,
+        "search_position": "right",
+        "search_row": "top",
+        "show_country": false,
+        "country_selector_style": false,
+        "show_language": false,
+        "localization_font": "heading",
+        "localization_font_size": "0.875rem",
+        "localization_position": "right",
+        "localization_row": "top",
+        "section_width": "page-width",
+        "section_height": "standard",
+        "enable_sticky_header": "always",
+        "divider_width": 0,
+        "divider_size": "page-width",
+        "border_width": 0,
+        "actions_display_style": "icon",
+        "actions_font_size": "0.875rem",
+        "actions_font": "body",
+        "actions_text_case": "none",
+        "background_color_top": "{{ settings.color_palette.background }}",
+        "enable_transparent_header_home": false,
+        "enable_transparent_header_product": false,
+        "enable_transparent_header_collection": false
+      }
+    },
+    "search_suggestions_cl": {
+      "type": "custom-liquid",
+      "name": "検索ワード候補",
+      "settings": {
+        "custom_liquid": "<style>\n  .search-suggestion-chips {\n    padding: var(--padding-md) var(--padding-lg);\n    border-bottom: 1px solid rgb(var(--color-foreground-rgb) / 0.08);\n  }\n\n  .search-suggestion-chips__label {\n    font-size: 0.75rem;\n    color: rgb(var(--color-foreground-rgb) / 0.5);\n    margin: 0 0 var(--margin-sm);\n  }\n\n  .search-suggestion-chips__list {\n    display: flex;\n    flex-wrap: wrap;\n    gap: var(--margin-xs);\n  }\n\n  .search-suggestion-chip {\n    display: inline-flex;\n    align-items: center;\n    padding: var(--padding-xs) var(--padding-md);\n    border-radius: 100px;\n    border: 1px solid rgb(var(--color-foreground-rgb) / 0.15);\n    background: transparent;\n    color: var(--color-foreground);\n    font-size: 0.875rem;\n    cursor: pointer;\n    transition: background-color 150ms ease;\n    line-height: 1.4;\n  }\n\n  .search-suggestion-chip:hover {\n    background-color: rgb(var(--color-foreground-rgb) / 0.05);\n  }\n</style>\n\n<script>\n(function () {\n  /* ============================================================\n     検索ワード候補の設定\n     キーワードを変更する場合はこのオブジェクトを編集してください\n  ============================================================ */\n  const SUGGESTIONS = {\n    label: '人気の検索ワード',\n    keywords: [\n      'ニット',\n      'マフラー',\n      'ギフト',\n      'コットン',\n      'ウール'\n    ]\n  };\n  /* ========================================================== */\n\n  document.addEventListener('DOMContentLoaded', () => {\n    const searchModal = document.getElementById('search-modal');\n    if (!searchModal) return;\n\n    const dialog = searchModal.querySelector('dialog');\n    if (!dialog) return;\n\n    // チップ要素を生成\n    function createChips() {\n      const wrapper = document.createElement('div');\n      wrapper.className = 'search-suggestion-chips';\n\n      const label = document.createElement('p');\n      label.className = 'search-suggestion-chips__label';\n      label.textContent = SUGGESTIONS.label;\n\n      const list = document.createElement('div');\n      list.className = 'search-suggestion-chips__list';\n\n      for (const kw of SUGGESTIONS.keywords) {\n        const btn = document.createElement('button');\n        btn.type = 'button';\n        btn.className = 'search-suggestion-chip';\n        btn.textContent = kw;\n        list.appendChild(btn);\n      }\n\n      wrapper.appendChild(label);\n      wrapper.appendChild(list);\n      return wrapper;\n    }\n\n    let chips = null;\n\n    // ダイアログの open 属性を監視\n    new MutationObserver(() => {\n      // ダイアログが閉じた: 次回開いた際にチップが表示されるよう hidden をリセット\n      if (!dialog.hasAttribute('open')) {\n        if (chips) chips.hidden = false;\n        return;\n      }\n\n      const content = dialog.querySelector('.predictive-search-form__content');\n      if (!content) return;\n\n      // 初回のみチップを生成・イベント設定\n      if (!chips) {\n        chips = createChips();\n\n        // チップクリック: 入力値をセットして検索発火\n        chips.addEventListener('click', (e) => {\n          const btn = e.target.closest('.search-suggestion-chip');\n          if (!btn) return;\n          const input = dialog.querySelector('input[name=\"q\"]');\n          if (!input) return;\n          input.value = btn.textContent;\n          input.dispatchEvent(new Event('input', { bubbles: true }));\n        });\n\n        // 入力監視: 文字があればチップを非表示\n        const input = dialog.querySelector('input[name=\"q\"]');\n        if (input) {\n          input.addEventListener('input', () => {\n            chips.hidden = !!input.value;\n          });\n        }\n      }\n\n      // コンテンツ先頭に挿入（重複防止）\n      if (!content.contains(chips)) {\n        content.prepend(chips);\n      }\n    }).observe(dialog, { attributes: true, attributeFilter: ['open'] });\n  });\n})();\n</script>",
+        "background_color": "{{ settings.color_palette.background }}",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    }
+  },
+  "order": [
+    "header_announcements_9jGBFp",
+    "header_section",
+    "search_suggestions_cl"
+  ]
+}

@@ -1,0 +1,14 @@
+/* Editorial content uses native Horizon page/article blocks. */
+.hiyori-editorial{max-width:100%;line-height:1.9;text-align:left;overflow-wrap:anywhere}
+.hiyori-editorial h2{font-size:clamp(1.35rem,2.4vw,2rem);margin:2.5rem 0 1rem;line-height:1.5}
+.hiyori-editorial p{margin:1rem 0}
+.hiyori-eyebrow{font-size:.75rem;letter-spacing:.12em;color:#666}
+.hiyori-editorial-hero{display:block;width:100%;height:auto;max-height:560px;object-fit:cover;margin:2rem 0}
+.hiyori-editorial-image{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;background:#f5f3ef;margin:1.5rem 0}
+.hiyori-editorial-section{margin-block:2rem;clear:both}
+.hiyori-editorial-links{display:flex;flex-wrap:wrap;gap:1rem;margin-block:2rem}
+.hiyori-editorial a{text-decoration:underline;text-underline-offset:4px}
+.hiyori-editorial table{width:100%;border-collapse:collapse}
+.hiyori-editorial td,.hiyori-editorial th{padding:12px;border-bottom:1px solid #ddd;text-align:left}
+.hiyori-sample-note{font-size:.75rem;color:#666;border-top:1px solid #ddd;padding-top:1rem}
+@media(max-width:749px){.hiyori-editorial h2{margin-top:2rem}.hiyori-editorial-hero{max-height:360px}}

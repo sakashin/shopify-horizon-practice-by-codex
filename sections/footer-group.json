@@ -1,0 +1,395 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer_m9NzUG": {
+      "type": "footer",
+      "blocks": {
+        "group_H6VpwJ": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 6,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_LWt8Pz": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>新作と入荷のお知らせを受け取る</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_f9CFLH": {
+              "type": "text",
+              "settings": {
+                "text": "<p>HIYORIから、季節の便りをお届けします。</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_LWt8Pz",
+            "text_f9CFLH"
+          ]
+        },
+        "email_signup_crihX7": {
+          "type": "email-signup",
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "heading": "",
+            "heading_preset": "h3",
+            "border_style": "all",
+            "border_width": 1,
+            "border_radius": 100,
+            "input_type_preset": "paragraph",
+            "style_class": "button-unstyled",
+            "display_type": "arrow",
+            "label": "登録する",
+            "integrated_button": true,
+            "button_type_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_H6VpwJ",
+        "email_signup_crihX7"
+      ],
+      "name": "t:names.footer",
+      "settings": {
+        "section_width": "page-width",
+        "gap": 20,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 30,
+        "padding-block-end": 30
+      }
+    },
+    "footer_utilities_jLGE8U": {
+      "type": "footer-utilities",
+      "blocks": {
+        "footer_copyright_jweRK8": {
+          "type": "footer-copyright",
+          "settings": {
+            "show_powered_by": false,
+            "font_size": "0.75rem",
+            "case": "none"
+          },
+          "blocks": {}
+        },
+        "footer_policy_list_VCdnpa": {
+          "type": "footer-policy-list",
+          "settings": {
+            "font_size": "0.75rem",
+            "case": "none"
+          },
+          "blocks": {}
+        },
+        "social_links_Ew63Kq": {
+          "type": "social-links",
+          "settings": {
+            "facebook_url": "",
+            "instagram_url": "",
+            "youtube_url": "",
+            "tiktok_url": "",
+            "twitter_url": "",
+            "threads_url": "",
+            "linkedin_url": "",
+            "bluesky_url": "",
+            "snapchat_url": "",
+            "pinterest_url": "",
+            "tumblr_url": "",
+            "vimeo_url": "",
+            "custom_url": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "footer_copyright_jweRK8",
+        "footer_policy_list_VCdnpa",
+        "social_links_Ew63Kq"
+      ],
+      "name": "t:names.utilities",
+      "settings": {
+        "section_width": "page-width",
+        "gap": 24,
+        "background_color": "{{ settings.color_palette.background }}",
+        "divider_thickness": 0,
+        "padding-block-start": 20,
+        "padding-block-end": 48
+      }
+    },
+    "support": {
+      "type": "section",
+      "settings": {
+        "section_width": "page-width",
+        "content_direction": "column",
+        "gap": 24,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      },
+      "blocks": {
+        "links": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "gap": 24
+          },
+          "blocks": {
+            "0": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "gap": 14
+              },
+              "blocks": {
+                "0": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/pages/guide\">ご利用ガイド</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "1": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/policies/shipping-policy\">配送・送料について</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "2": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/policies/refund-policy\">返品・交換・返金</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "3": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/pages/size-guide\">サイズガイド</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "4": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/pages/faq\">よくあるご質問</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            },
+            "1": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "gap": 14
+              },
+              "blocks": {
+                "5": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/pages/contact\">お問い合わせ</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "6": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/policies/terms-of-service\">利用規約</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "7": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/policies/privacy-policy\">プライバシーポリシー</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "8": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/policies/legal-notice\">特定商取引法に基づく表記</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "9": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/pages/lookbook\">ルックブック</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": [
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ]
+            },
+            "2": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "gap": 14
+              },
+              "blocks": {
+                "10": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/pages/material-care\">素材とお手入れ</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "11": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/pages/gift-guide\">ギフトガイド</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "12": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/pages/colors\">定番色のご紹介</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "13": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/policies/contact-information\">連絡先情報</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                },
+                "14": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"/account\">マイアカウント</a></p>",
+                    "type_preset": "rte",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14"
+              ]
+            }
+          },
+          "block_order": [
+            "0",
+            "1",
+            "2"
+          ]
+        }
+      },
+      "block_order": [
+        "links"
+      ]
+    }
+  },
+  "order": [
+    "support",
+    "footer_m9NzUG",
+    "footer_utilities_jLGE8U"
+  ]
+}
