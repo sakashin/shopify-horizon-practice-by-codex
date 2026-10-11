@@ -9,7 +9,7 @@
           "type": "_announcement",
           "settings": {
             "text": "10,000円以上のご注文で送料無料",
-            "link": "shopify://pages/guide",
+            "link": "shopify://policies/shipping-policy",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
             "weight": "",
